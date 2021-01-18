@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "sample-workitems/{name}",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "name": "myInputBlob",
+      "type": "blob",
+      "direction": "in",
+      "path": "sample-workitems/{name}",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "name": "myOutputBlob",
+      "type": "blob",
+      "direction": "out",
+      "path": "copytwomvanbrae/{name}",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}
